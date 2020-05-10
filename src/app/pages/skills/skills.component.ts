@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-
+  tomorrow = new Date(2020, 9, 20, 14, 34);
   constructor() { }
 
   ngOnInit(): void {

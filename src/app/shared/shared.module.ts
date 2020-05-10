@@ -9,6 +9,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import {RouterModule} from '@angular/router';
+import {MatCardModule} from '@angular/material/card';
+import {CdkStepperModule} from '@angular/cdk/stepper';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 
 @NgModule({
   declarations: [NavigationComponent],
@@ -25,7 +30,11 @@ export class SharedModule {
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    CdkStepperModule,
+    MatStepperModule,
+    MatExpansionModule
   ];
 
   static readonly EXPORT_LIST = [
