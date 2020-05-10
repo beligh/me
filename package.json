@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "prod": "ng build --prod --aot=true --buildOptimizer=true --prod=true --sourceMap=false --outputPath=docs",
+    "prod": "ng build --prod --base-href=https://beligh.github.io/me/ --aot --buildOptimizer --sourceMap=false --outputPath=docs",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
