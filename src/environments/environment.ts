@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  baseRef: '/'
+  baseRef: '/',
+  version: '1.0.0'
 };
 
 /*

@@ -1,25 +1,24 @@
-<p>skills works!</p>
+<div class="mat-title with-icon">
+  <mat-icon inline="true">school</mat-icon>
+  <span class="app-padding">Skills</span>
+</div>
 
-<mat-accordion class="example-headers-align">
+<ngx-loading [show]="loading"></ngx-loading>
 
-  <mat-expansion-panel>
+<mat-accordion class="app-headers-align" *ngIf="!loading">
+  <mat-expansion-panel *ngFor="let item of skills">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <mat-icon>account_circle</mat-icon>
-        <div style="padding-left: 10px">Personal data</div>
+        <mat-icon>{{item?.icon}}</mat-icon>
+        <div class="app-padding">{{item?.category  | titlecase }}</div>
       </mat-panel-title>
     </mat-expansion-panel-header>
-    This the expansion 1 content
+    <div *ngFor="let skill of item?.items">
+      <div class="mat-subheading-2 with-icon">
+        <mat-icon inline="true">{{skill?.icon}}</mat-icon>
+        <span class="app-padding">{{skill?.title  | titlecase }}</span>
+      </div>
+     <!-- <div [innerHTML]="skill?.content"></div> -->
+    </div>
   </mat-expansion-panel>
-
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <mat-icon>account_circle</mat-icon>
-        <div style="padding-left: 10px">Personal data</div>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    This the expansion 2 content
-  </mat-expansion-panel>
-
 </mat-accordion>

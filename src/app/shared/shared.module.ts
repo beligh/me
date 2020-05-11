@@ -13,6 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 import {CdkStepperModule} from '@angular/cdk/stepper';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {NgxLoadingModule} from 'ngx-loading';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ export class SharedModule {
     MatCardModule,
     CdkStepperModule,
     MatStepperModule,
-    MatExpansionModule
+    MatExpansionModule,
+    NgxLoadingModule
   ];
 
   static readonly EXPORT_LIST = [

@@ -325,3 +325,12 @@ svg#clouds {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
 }
+
+.with-icon {
+  display: flex;
+  align-items: center;
+}
+
+.app-padding {
+  padding-left: 8px;
+}

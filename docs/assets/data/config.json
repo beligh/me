@@ -1,0 +1,7 @@
+{
+  "title": "Beligh HAMDI",
+  "links": [
+    { "title": "Home", "icon":  "home", "path":  "/home" },
+    { "title": "Skills", "icon":  "school", "path":  "/skills" }
+  ]
+}
