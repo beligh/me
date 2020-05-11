@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  baseRef: '/me',
+  baseRef: '/',
   version: '1.0.0'
 };
